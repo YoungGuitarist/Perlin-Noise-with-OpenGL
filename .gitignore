@@ -4,3 +4,5 @@ glad
 .idea
 /libs
 /build
+
+*.xml
