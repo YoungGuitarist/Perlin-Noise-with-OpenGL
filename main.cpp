@@ -1,7 +1,9 @@
-#include "glad/include/glad/glad.h"
-#include <GLFW/glfw3.h>
+//#include "glad/include/glad/glad.h"
+//#include <GLFW/glfw3.h>
 #include <cmath>
 #include <fstream>
+#include  "libs/glad/include/glad/glad.h"
+#include  "libs/glfw-3.4/include/GLFW/glfw3.h"
 #include <iostream>
 #include <sstream>
 
@@ -52,9 +54,9 @@ int main() {
   glEnableVertexAttribArray(1);
 
   std::string vertCode =
-      loadShader("/home/vlad/code/cpp/PerlinOpenGL/shaders/vertex.glsl");
+      loadShader("shaders/vertex.glsl");
   std::string fragCode =
-      loadShader("/home/vlad/code/cpp/PerlinOpenGL/shaders/fragment.glsl");
+      loadShader("shaders/fragment.glsl");
 
   GLuint vert = compileShader(GL_VERTEX_SHADER, vertCode.c_str());
   GLuint frag = compileShader(GL_FRAGMENT_SHADER, fragCode.c_str());

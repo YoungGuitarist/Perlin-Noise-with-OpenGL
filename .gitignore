@@ -2,4 +2,5 @@ build
 glad
 /cmake-build-debug
 .idea
-
+/libs
+/build
